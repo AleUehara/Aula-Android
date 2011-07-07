@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="20dp"
+    >
+<TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    android:layout_margin="10dp"
+/>
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#ffffff"
+	    android:padding="20dp"
+	    >
+	    
+	<ImageView
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:src="@drawable/icon"
+	    android:layout_margin="10dp"
+	    />
+	<TextView  
+		android:id="@+id/texto1"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="Texto C"
+	    android:layout_margin="10dp"
+	    />
+	</LinearLayout>
+</LinearLayout> -->
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" android:layout_height="fill_parent" 
+android:stretchColumns="1">
+	<TableRow>
+		<TextView android:text="Usuario: " android:padding="3dip" />
+		<EditText android:id="@+id/campoLogin" android:padding="3dip" />
+	</TableRow>
+	<TableRow>
+		<TextView android:text="Senha: " android:padding="3dip" />
+		<EditText android:id="@+id/campoSenha" android:padding="3dip" android:password="true"/>
+	</TableRow>
+	<TableRow>
+	<Button android:id="@+id/login" android:text="Login"/>
+	</TableRow>
+</TableLayout>

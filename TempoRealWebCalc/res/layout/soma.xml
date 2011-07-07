@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+>
+	<TableRow>
+		<TextView android:text="Número 1:" />
+		<EditText android:id="@+id/n1" android:text="3"  android:numeric="integer" android:width="100sp" android:maxLength="5" />
+	</TableRow>
+	<TableRow>
+		<TextView android:text="Número 2:"  />
+		<EditText android:id="@+id/n2" android:text="4" android:numeric="integer" android:width="100sp" android:maxLength="5" />
+	</TableRow>
+	<TableRow>
+		<Button android:id="@+id/btSomar" android:text="Somar HTTP" />
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+		<View 	
+			android:layout_height="1dip" android:layout_width="fill_parent"
+			android:layout_weight="0"
+			android:background="#000000" 
+		/>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/soma" android:visibility="invisible" />
+	</LinearLayout>
+</TableLayout>
